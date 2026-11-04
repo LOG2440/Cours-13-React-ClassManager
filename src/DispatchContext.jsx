@@ -1,5 +1,5 @@
-import React from "react";
+import { createContext } from "react";
 
-const DispatchContext = React.createContext();
+const DispatchContext = createContext();
 
 export default DispatchContext;
