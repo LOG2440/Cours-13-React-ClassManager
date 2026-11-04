@@ -14,6 +14,7 @@ const newClass = (sigle) => {
 export default function reducer(state, action) {
   switch (action.type) {
     case ACTIONS.ADD:
+      if (!action.payload.sigle.trim() || state.classes.some((c) => c.sigle === action.payload.sigle)) return state;
       // Peut retourner l'ancien tableau et la nouvelle valeur avec l'operateur spread
       return {
         classes: [...state.classes, newClass(action.payload.sigle)],
