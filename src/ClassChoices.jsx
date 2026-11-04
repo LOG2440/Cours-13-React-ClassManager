@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import ClassContext from "./ClassContext";
 
 const ClassChoices = () => {
@@ -7,9 +7,9 @@ const ClassChoices = () => {
     <>
       <p>Cliquez sur un cours pour le supprimer de la liste</p>
       <ul className="items">
-        {classes.map((item, i) => {
+        {classes.map((item) => {
           return (
-            <li key={i} onClick={() => deleteClass(item.sigle)}>
+            <li key={item.sigle} onClick={() => deleteClass(item.sigle)}>
               <div className="item">
                 <p className="item-text">
                   {item.sigle} : {item.credits}

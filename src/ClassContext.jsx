@@ -1,7 +1,7 @@
-import React from "react";
+import { createContext } from "react";
 import { CLASSES } from "./classes";
 
-const ClassContext = React.createContext({
+const ClassContext = createContext({
   classes: CLASSES,
 });
 
