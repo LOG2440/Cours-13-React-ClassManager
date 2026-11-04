@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 function ClassInput({ classModifier }) {
   const [value, setValue] = useState("");

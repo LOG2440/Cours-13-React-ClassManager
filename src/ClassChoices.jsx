@@ -1,5 +1,3 @@
-import React from "react";
-
 const ClassChoices = ({ classesList, classModifier }) => {
   const deleteClass = (selectedClass) => {
     classModifier(selectedClass);
@@ -8,9 +6,9 @@ const ClassChoices = ({ classesList, classModifier }) => {
     <>
       <p>Cliquez sur un cours pour le supprimer de la liste</p>
       <ul className="items">
-        {classesList.map((item,i) => {
+        {classesList.map((item) => {
           return (
-            <li key={i} onClick={() => deleteClass(item.sigle)}>
+            <li key={item.sigle} onClick={() => deleteClass(item.sigle)}>
               <div className="item">
                 <p className="item-text">
                   {item.sigle} : {item.credits}
