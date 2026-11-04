@@ -1,4 +1,4 @@
-import React, { useReducer } from "react";
+import { useReducer } from "react";
 import { CLASSES } from "./classes";
 import ClassContext from "./ClassContext";
 import reducer from "./reducer";

@@ -1,4 +1,3 @@
-import React from "react";
 import "./styles.css";
 import ClassProvider from "./ClassProvider";
 import ClassChoices from "./ClassChoices";

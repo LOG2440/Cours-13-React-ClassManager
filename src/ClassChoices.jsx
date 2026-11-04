@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import ClassContext from "./ClassContext";
 import { ACTIONS } from "./reducer";
 
@@ -8,10 +8,10 @@ const ClassChoices = () => {
     <>
       <p>Cliquez sur un cours pour le supprimer de la liste</p>
       <ul className="items">
-        {state.classes.map((item, i) => {
+        {state.classes.map((item) => {
           return (
             <li
-              key={i}
+              key={item.sigle}
               onClick={() => dispatch({ type: ACTIONS.DELETE, payload: item })}
               onContextMenu={(e) => {
                 e.preventDefault();
